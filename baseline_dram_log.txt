@@ -1,0 +1,45 @@
+warn: The se.py script is deprecated. It will be removed in future releases of  gem5.
+warn: Memory mode will be changed to atomic_noncaching
+warn: Base 10 memory/cache size 8GB will be cast to base 2 size 8GiB.
+warn: Base 10 memory/cache size 2MB will be cast to base 2 size 2MiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 64kB will be cast to base 2 size 64KiB.
+warn: Base 10 memory/cache size 2MB will be cast to base 2 size 2MiB.
+warn: Directory_Controller is deprecated. Use MESI_Two_Level_Directory_Controller instead
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Apr 18 2026 13:28:44
+gem5 started Apr 18 2026 13:52:02
+gem5 executing on Prajit, pid 74124
+command line: ./build/X86/gem5.opt ./configs/deprecated/example/se.py --ruby --num-cpus=1 --mem-size=8GB --mem-type=DDR3_2133_8x8 --l1i_size=32kB --l1i_assoc=2 --l1d_size=64kB --l1d_assoc=2 --l2_size=2MB --l2_assoc=4 --fast-forward=1000000 --maxinsts=10000000 -c /home/dreambot/spec2017/benchspec/CPU/505.mcf_r/exe/mcf_r_base.mytest-m64 -o /home/dreambot/spec2017/benchspec/CPU/505.mcf_r/run/run_base_test_mytest-m64.0000/inp.in
+
+Switch at instruction count:1000000
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall rseq(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+
+MCF SPEC CPU version 1.11
+Copyright (c) 1998-2000 Zuse Institut Berlin (ZIB)
+Copyright (c) 2000-2002 Andreas Loebel & ZIB
+Copyright (c) 2003-2005 Andreas Loebel
+Copyright (c) 2006-2010 Dres. Loebel, Borndoerfer & Weider GbR (LBW)
+
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+Switched CPUS @ tick 1112194000
+switching cpus
+**** REAL SIMULATION ****
+src/mem/ruby/system/Sequencer.cc:707: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+[system.ruby.l1_cntrl0.L1Icache] Window Hits:   328607
+[system.ruby.l1_cntrl0.L1Icache] Window Misses: 1294
+[system.ruby.l1_cntrl0.L1Icache] Miss Rate:     0.392239%
+Exiting @ tick 21608219500 because a thread reached the max instruction count
